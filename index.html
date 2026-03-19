@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Fluent Forms Growth Strategy — BSF Assignment</title>
+<title>Fluent Forms Growth Strategy — Brainstorm Force</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <script>
 tailwind.config = {
   theme: {
     extend: {
       fontFamily: {
-        display: ['Sora','sans-serif'],
-        body: ['Plus Jakarta Sans','sans-serif'],
-        mono: ['JetBrains Mono','monospace'],
+        display: ['Manrope','sans-serif'],
+        body: ['Inter','sans-serif'],
+        mono: ['Inter','sans-serif'],
       },
       colors: {
         brand:'#2C6CFF', 'brand-dark':'#273050', 'brand-light':'#08A1FF',
@@ -28,7 +28,7 @@ tailwind.config = {
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:#F7FAFF;font-family:'Plus Jakarta Sans',sans-serif;color:#273050;-webkit-font-smoothing:antialiased}
+body{background:#F7FAFF;font-family:'Inter',sans-serif;color:#273050;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
 ::-webkit-scrollbar{width:5px}
 ::-webkit-scrollbar-track{background:#F7FAFF}
 ::-webkit-scrollbar-thumb{background:#C7D4F5;border-radius:99px}
@@ -44,21 +44,21 @@ body{background:#F7FAFF;font-family:'Plus Jakarta Sans',sans-serif;color:#273050
 .nav-cta:hover{background:#1a5af0;box-shadow:0 4px 14px rgba(44,108,255,.35)}
 
 /* BADGES & PILLS */
-.badge{display:inline-flex;align-items:center;gap:6px;background:#EEF3FF;border:1px solid #D0DCFF;border-radius:99px;padding:5px 14px 5px 10px;font-size:11.5px;font-family:'JetBrains Mono',monospace;color:#2C6CFF;font-weight:500}
+.badge{display:inline-flex;align-items:center;gap:6px;background:#EEF3FF;border:1px solid #D0DCFF;border-radius:99px;padding:5px 14px 5px 10px;font-size:11px;font-family:'Inter',sans-serif;color:#2C6CFF;font-weight:600;letter-spacing:.01em}
 .badge .dot{width:6px;height:6px;border-radius:50%;background:#22c55e;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.8)}}
-.pill{display:inline-flex;align-items:center;padding:3px 10px;border-radius:6px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:500}
+.pill{display:inline-flex;align-items:center;padding:3px 10px;border-radius:6px;font-family:'Inter',sans-serif;font-size:11px;font-weight:600;letter-spacing:.01em}
 .pill-blue{background:#EEF3FF;color:#2C6CFF}.pill-cyan{background:#E6F7FF;color:#0891B2}
 .pill-green{background:#E6FDF4;color:#059669}.pill-red{background:#FFF0F0;color:#DC2626}
 .pill-amber{background:#FFFBEB;color:#D97706}.pill-gray{background:#F1F5F9;color:#64748B}
 .pill-dark{background:#273050;color:#fff}
 
 /* SECTION LABEL */
-.sec-label{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:3px;text-transform:uppercase;color:#2C6CFF;font-weight:500}
+.sec-label{font-family:'Inter',sans-serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#2C6CFF;font-weight:700}
 
 /* INSIGHT BAR */
 .insight-bar{border-left:3px solid #2C6CFF;padding:10px 16px;background:linear-gradient(90deg,rgba(44,108,255,.06),transparent);border-radius:0 8px 8px 0;margin-bottom:24px}
-.insight-bar p{font-size:14px;font-weight:600;color:#273050;line-height:1.5}
+.insight-bar p{font-size:14px;font-weight:600;color:#273050;line-height:1.6;letter-spacing:-.01em}
 
 /* CARDS */
 .card{background:#fff;border:1px solid #E2E8F8;border-radius:16px;transition:box-shadow .25s,transform .25s}
@@ -80,7 +80,7 @@ body{background:#F7FAFF;font-family:'Plus Jakarta Sans',sans-serif;color:#273050
 /* FORM BUILDER MOCK */
 .mock-field{border:1px solid #E2E8F8;border-radius:8px;padding:8px 12px;font-size:12px;color:#696F84;background:#fff;display:flex;align-items:center;gap:8px}
 .mock-field:hover{border-color:#2C6CFF;background:#F7FAFF}
-.mock-label{font-size:10px;font-weight:600;color:#273050;margin-bottom:4px;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.5px}
+.mock-label{font-size:10px;font-weight:700;color:#273050;margin-bottom:4px;font-family:'Inter',sans-serif;text-transform:uppercase;letter-spacing:.1em}
 
 /* FUNNEL */
 .funnel-stage-btn{border:2px solid #E2E8F8;background:#fff;border-radius:16px;cursor:pointer;transition:all .3s;position:relative;overflow:hidden}
@@ -97,11 +97,11 @@ body{background:#F7FAFF;font-family:'Plus Jakarta Sans',sans-serif;color:#273050
 .chart-bar-outer{display:flex;align-items:flex-end;gap:10px;height:120px}
 .chart-bar-wrap{display:flex;align-items:flex-end;gap:10px;height:120px;padding-bottom:0;position:relative}
 .chart-bar-col{display:flex;flex-direction:column;align-items:center;flex:1;min-width:0;height:100%;justify-content:flex-end;position:relative}
-.chart-bar-val{font-size:10px;font-family:'JetBrains Mono',monospace;font-weight:700;text-align:center;margin-bottom:3px;line-height:1}
+.chart-bar-val{font-size:10px;font-family:'Inter',sans-serif;font-weight:700;text-align:center;margin-bottom:3px;line-height:1}
 .chart-bar{width:100%;border-radius:6px 6px 0 0;transition:height 1.2s cubic-bezier(.4,0,.2,1);flex-shrink:0}
 .chart-bar:hover{filter:brightness(1.08)}
 .chart-bar-label{font-size:11px;font-weight:600;text-align:center;margin-top:5px;white-space:nowrap}
-.chart-bar-sub{font-size:10px;font-family:'JetBrains Mono',monospace;text-align:center;margin-top:1px}
+.chart-bar-sub{font-size:10px;font-family:'Inter',sans-serif;font-weight:500;text-align:center;margin-top:1px}
 
 /* COMPETITOR CARDS */
 .comp-card{background:#fff;border:1px solid #E2E8F8;border-radius:18px;overflow:hidden;transition:box-shadow .25s,transform .2s}
@@ -114,7 +114,7 @@ body{background:#F7FAFF;font-family:'Plus Jakarta Sans',sans-serif;color:#273050
 .comp-card.open .comp-chevron{transform:rotate(180deg)}
 
 /* STRENGTH/WEAKNESS BADGES */
-.sw-badge{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:600;font-family:'JetBrains Mono',monospace}
+.sw-badge{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:600;font-family:'Inter',sans-serif;letter-spacing:.01em}
 
 /* RESEARCH LINKS */
 .rlink{display:flex;align-items:center;gap:10px;padding:10px 14px;background:#F7FAFF;border:1px solid #E2E8F8;border-radius:10px;text-decoration:none;color:#273050;font-size:13px;transition:all .2s;group:true}
@@ -129,7 +129,7 @@ body{background:#F7FAFF;font-family:'Plus Jakarta Sans',sans-serif;color:#273050
 
 /* TIMELINE */
 .tl-line{position:absolute;left:19px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,#2C6CFF,#08A1FF,rgba(8,161,255,.2))}
-.tl-dot{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;font-family:'JetBrains Mono',monospace;flex-shrink:0;position:relative;z-index:1;border:3px solid #fff;box-shadow:0 0 0 2px #C7D4F5,0 4px 12px rgba(44,108,255,.2)}
+.tl-dot{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;font-family:'Inter',sans-serif;flex-shrink:0;position:relative;z-index:1;border:3px solid #fff;box-shadow:0 0 0 2px #C7D4F5,0 4px 12px rgba(44,108,255,.2)}
 
 /* MATH */
 .math-node{background:#fff;border:1px solid #E2E8F8;border-radius:14px;padding:16px 14px;text-align:center;flex:1;transition:all .25s;min-width:0}
@@ -141,7 +141,7 @@ body{background:#F7FAFF;font-family:'Plus Jakarta Sans',sans-serif;color:#273050
 .priority-card{background:#fff;border:1px solid #E2E8F8;border-radius:12px;transition:all .25s;overflow:hidden;position:relative}
 .priority-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,#2C6CFF,#08A1FF)}
 .priority-card:hover{box-shadow:0 8px 32px rgba(44,108,255,.12);transform:translateX(3px)}
-.pnum{font-family:'Sora',sans-serif;font-size:42px;font-weight:800;color:rgba(44,108,255,.06);line-height:1;width:36px;flex-shrink:0}
+.pnum{font-family:'Manrope',sans-serif;font-size:42px;font-weight:800;color:rgba(44,108,255,.06);line-height:1;width:36px;flex-shrink:0}
 
 /* PRICING COMPARE */
 .price-card{border-radius:14px;padding:16px;transition:all .25s;cursor:default}
@@ -159,13 +159,44 @@ body{background:#F7FAFF;font-family:'Plus Jakarta Sans',sans-serif;color:#273050
 .bg-dark{background:linear-gradient(135deg,#1e2e5c,#273050)}
 
 /* MATH ROW */
-.math-row-item{display:flex;justify-content:space-between;align-items:center;padding:10px 20px;border-bottom:1px solid #F0F5FF;font-size:13.5px;gap:12px;transition:background .2s}
+.math-row-item{display:flex;justify-content:space-between;align-items:center;padding:10px 20px;border-bottom:1px solid #F0F5FF;font-size:13px;gap:12px;transition:background .2s}
 .math-row-item:hover{background:#F7FAFF}
 .math-row-item:last-child{border:none}
+
+/* CHART COL GROUP hover */
+.chart-col-group{cursor:default;transition:transform .2s ease}
+.chart-col-group:hover{transform:translateY(-3px)}
+.chart-col-group:hover > div:last-child > div{filter:brightness(1.1)}
 
 /* FEATURE COMPARISON */
 .feat-row{transition:background .15s}
 .feat-row:hover{background:#F0F5FF !important}
+
+/* ── TYPOGRAPHY SYSTEM: Manrope + Inter ─────────────────────────── */
+/* Manrope: headings, display, strong UI labels                       */
+/* Inter:   body, captions, tags, everything else                     */
+
+/* Global heading defaults */
+h1,h2,h3,h4,h5,h6{font-family:'Manrope',sans-serif;font-weight:700;letter-spacing:-.02em;line-height:1.15}
+h1{letter-spacing:-.03em}
+h2{letter-spacing:-.025em}
+h3{letter-spacing:-.015em}
+
+/* Body text smoothing */
+p,li,span,div{letter-spacing:-.005em}
+
+/* Code snippets — Inter semibold, not monospace */
+code{font-family:'Inter',sans-serif;font-weight:600;font-size:.85em;
+     background:#EEF3FF;color:#2C6CFF;border-radius:5px;padding:2px 7px}
+
+/* font-mono class override — replaces JetBrains Mono everywhere */
+.font-mono{font-family:'Inter',sans-serif !important;letter-spacing:.01em}
+
+/* font-display class → Manrope */
+.font-display{font-family:'Manrope',sans-serif}
+
+/* Numeric figures — tabular for data/stats */
+.font-mono, .math-node, .math-row-item{font-variant-numeric:tabular-nums}
 </style>
 </head>
 <body>
@@ -217,7 +248,7 @@ body{background:#F7FAFF;font-family:'Plus Jakarta Sans',sans-serif;color:#273050
       <!-- LEFT -->
       <div>
         <div class="badge mb-6 reveal">
-          <span class="dot"></span>BSF · Digital Marketing Manager Assignment
+          <span class="dot"></span>Brainstorm Force · Product & Growth Marketing Manager
         </div>
         <h1 class="font-display font-bold leading-[1.12] tracking-tight mb-5 reveal" style="font-size:clamp(36px,5vw,58px)">
           Growing Fluent Forms<br/>
@@ -253,7 +284,6 @@ body{background:#F7FAFF;font-family:'Plus Jakarta Sans',sans-serif;color:#273050
               </div>
               <span class="font-display font-bold text-sm" style="color:#273050">Fluent Forms</span>
             </div>
-            <span class="pill pill-green" style="font-size:10px">● Live</span>
           </div>
           <!-- Stats grid -->
           <div class="grid grid-cols-2 gap-3 mb-5">
@@ -567,65 +597,87 @@ body{background:#F7FAFF;font-family:'Plus Jakarta Sans',sans-serif;color:#273050
 
     <!-- Install comparison chart -->
     <div class="card p-5 mb-6 reveal">
-      <div class="flex items-center justify-between mb-4">
+      <div class="flex items-center justify-between mb-5">
         <div>
-          <div class="text-xs font-mono font-semibold uppercase tracking-wider mb-1" style="color:#2C6CFF">Install Comparison Chart</div>
+          <div class="sec-label mb-1">Install Comparison Chart</div>
           <div class="text-sm font-semibold" style="color:#273050">Active WordPress.org installs — The market landscape</div>
         </div>
         <span class="pill pill-blue" style="font-size:10px">Source: WP.org</span>
       </div>
-      <!-- Chart: value labels row ABOVE the bars -->
-      <div class="px-2 mb-1" style="display:flex;gap:10px">
-        <div style="flex:1;text-align:center;font-size:10px;font-family:'JetBrains Mono',monospace;font-weight:700;color:#2C6CFF">6M+</div>
-        <div style="flex:1;text-align:center;font-size:10px;font-family:'JetBrains Mono',monospace;font-weight:700;color:#64748B">900K</div>
-        <div style="flex:1;text-align:center;font-size:10px;font-family:'JetBrains Mono',monospace;font-weight:700;color:#64748B">~900K</div>
-        <div style="flex:1;text-align:center;font-size:10px;font-family:'JetBrains Mono',monospace;font-weight:700;color:#059669">600K ★</div>
-        <div style="flex:1;text-align:center;font-size:10px;font-family:'JetBrains Mono',monospace;font-weight:700;color:#64748B">~800K</div>
+
+      <!-- Chart columns: each col owns its number + bar + label as one unit -->
+      <div style="display:flex;gap:8px;align-items:flex-end;padding:0 8px" id="installChart">
+
+        <!-- WPForms — Leader (blue) -->
+        <div class="chart-col-group" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:0">
+          <div class="chart-num" style="font-family:'Manrope',sans-serif;font-size:22px;font-weight:800;color:#2C6CFF;line-height:1;margin-bottom:6px;opacity:0;transition:opacity .5s ease .2s">6M+</div>
+          <div style="width:100%;display:flex;flex-direction:column;justify-content:flex-end;height:110px">
+            <div id="bar-wpf" style="width:100%;height:0;border-radius:7px 7px 0 0;background:linear-gradient(180deg,#2C6CFF,#08A1FF);transition:height 1.2s cubic-bezier(.4,0,.2,1)"></div>
+          </div>
+        </div>
+
+        <!-- Ninja Forms — Declining (orange/neutral) -->
+        <div class="chart-col-group" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:0">
+          <div class="chart-num" style="font-family:'Manrope',sans-serif;font-size:18px;font-weight:700;color:#94A3B8;line-height:1;margin-bottom:6px;opacity:0;transition:opacity .5s ease .35s">900K</div>
+          <div style="width:100%;display:flex;flex-direction:column;justify-content:flex-end;height:110px">
+            <div id="bar-nf" style="width:100%;height:0;border-radius:7px 7px 0 0;background:linear-gradient(180deg,#EA580C,#FB923C);transition:height 1.2s cubic-bezier(.4,0,.2,1)"></div>
+          </div>
+        </div>
+
+        <!-- Gravity Forms — No free tier (neutral) -->
+        <div class="chart-col-group" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:0">
+          <div class="chart-num" style="font-family:'Manrope',sans-serif;font-size:18px;font-weight:700;color:#94A3B8;line-height:1;margin-bottom:6px;opacity:0;transition:opacity .5s ease .45s">~900K</div>
+          <div style="width:100%;display:flex;flex-direction:column;justify-content:flex-end;height:110px">
+            <div id="bar-gf" style="width:100%;height:0;border-radius:7px 7px 0 0;background:linear-gradient(180deg,#475569,#94A3B8);transition:height 1.2s cubic-bezier(.4,0,.2,1)"></div>
+          </div>
+        </div>
+
+        <!-- Fluent Forms — Star (green highlight) -->
+        <div class="chart-col-group" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:0">
+          <div class="chart-num" style="font-family:'Manrope',sans-serif;font-size:18px;font-weight:800;color:#059669;line-height:1;margin-bottom:6px;opacity:0;transition:opacity .5s ease .55s">600K ★</div>
+          <div style="width:100%;display:flex;flex-direction:column;justify-content:flex-end;height:110px">
+            <div id="bar-ff" style="width:100%;height:0;border-radius:7px 7px 0 0;background:linear-gradient(180deg,#059669,#34D399);box-shadow:0 0 0 2px #059669;box-sizing:border-box;transition:height 1.2s cubic-bezier(.4,0,.2,1)"></div>
+          </div>
+        </div>
+
+        <!-- Typeform — SaaS (neutral) -->
+        <div class="chart-col-group" style="flex:1;display:flex;flex-direction:column;align-items:center;gap:0">
+          <div class="chart-num" style="font-family:'Manrope',sans-serif;font-size:18px;font-weight:700;color:#94A3B8;line-height:1;margin-bottom:6px;opacity:0;transition:opacity .5s ease .65s">~800K</div>
+          <div style="width:100%;display:flex;flex-direction:column;justify-content:flex-end;height:110px">
+            <div id="bar-tf" style="width:100%;height:0;border-radius:7px 7px 0 0;background:linear-gradient(180deg,#7C3AED,#A78BFA);transition:height 1.2s cubic-bezier(.4,0,.2,1)"></div>
+          </div>
+        </div>
+
       </div>
-      <!-- Bar chart area — fixed height, bars grow from bottom -->
-      <div class="chart-bar-wrap px-2" id="installChart">
-        <div class="chart-bar-col">
-          <div class="chart-bar w-full" id="bar-wpf" style="height:0;background:linear-gradient(180deg,#2C6CFF,#08A1FF)"></div>
+
+      <!-- Baseline -->
+      <div style="height:1px;background:#E2E8F8;margin:0 8px"></div>
+
+      <!-- Name + status labels -->
+      <div style="display:flex;gap:8px;padding:8px 8px 0" id="chartLabels">
+        <div style="flex:1;text-align:center">
+          <div style="font-size:12px;font-weight:700;color:#273050;font-family:'Manrope',sans-serif">WPForms</div>
+          <div style="font-size:11px;color:#DC2626;font-weight:500;margin-top:1px">Leader</div>
         </div>
-        <div class="chart-bar-col">
-          <div class="chart-bar w-full" id="bar-nf" style="height:0;background:linear-gradient(180deg,#EA580C,#FB923C)"></div>
+        <div style="flex:1;text-align:center">
+          <div style="font-size:12px;font-weight:600;color:#64748B;font-family:'Manrope',sans-serif">Ninja Forms</div>
+          <div style="font-size:11px;color:#D97706;font-weight:500;margin-top:1px">Declining ↓</div>
         </div>
-        <div class="chart-bar-col">
-          <div class="chart-bar w-full" id="bar-gf" style="height:0;background:linear-gradient(180deg,#475569,#94A3B8)"></div>
+        <div style="flex:1;text-align:center">
+          <div style="font-size:12px;font-weight:600;color:#64748B;font-family:'Manrope',sans-serif">Gravity Forms</div>
+          <div style="font-size:11px;color:#64748B;font-weight:500;margin-top:1px">No free tier</div>
         </div>
-        <div class="chart-bar-col">
-          <div class="chart-bar w-full" id="bar-ff" style="height:0;background:linear-gradient(180deg,#2C6CFF,#08A1FF);border:2px solid #2C6CFF;box-sizing:border-box"></div>
+        <div style="flex:1;text-align:center">
+          <div style="font-size:12px;font-weight:700;color:#059669;font-family:'Manrope',sans-serif">Fluent Forms</div>
+          <div style="font-size:11px;color:#059669;font-weight:600;margin-top:1px">Growing ↑</div>
         </div>
-        <div class="chart-bar-col">
-          <div class="chart-bar w-full" id="bar-tf" style="height:0;background:linear-gradient(180deg,#7C3AED,#A78BFA)"></div>
+        <div style="flex:1;text-align:center">
+          <div style="font-size:12px;font-weight:600;color:#64748B;font-family:'Manrope',sans-serif">Typeform</div>
+          <div style="font-size:11px;color:#64748B;font-weight:500;margin-top:1px">SaaS / diff.</div>
         </div>
       </div>
-      <!-- Baseline rule -->
-      <div class="mx-2 mt-0" style="height:1px;background:#E2E8F8"></div>
-      <!-- Name + sub labels row BELOW the bars -->
-      <div class="px-2 mt-2" style="display:flex;gap:10px">
-        <div style="flex:1;text-align:center">
-          <div style="font-size:11px;font-weight:600;color:#273050">WPForms</div>
-          <div style="font-size:10px;font-family:'JetBrains Mono',monospace;color:#DC2626">Leader</div>
-        </div>
-        <div style="flex:1;text-align:center">
-          <div style="font-size:11px;font-weight:600;color:#273050">Ninja Forms</div>
-          <div style="font-size:10px;font-family:'JetBrains Mono',monospace;color:#D97706">Declining</div>
-        </div>
-        <div style="flex:1;text-align:center">
-          <div style="font-size:11px;font-weight:600;color:#273050">Gravity Forms</div>
-          <div style="font-size:10px;font-family:'JetBrains Mono',monospace;color:#64748B">No free tier</div>
-        </div>
-        <div style="flex:1;text-align:center">
-          <div style="font-size:11px;font-weight:600;color:#2C6CFF">Fluent Forms</div>
-          <div style="font-size:10px;font-family:'JetBrains Mono',monospace;color:#059669">Growing ↑</div>
-        </div>
-        <div style="flex:1;text-align:center">
-          <div style="font-size:11px;font-weight:600;color:#273050">Typeform</div>
-          <div style="font-size:10px;font-family:'JetBrains Mono',monospace;color:#64748B">SaaS / diff.</div>
-        </div>
-      </div>
-      <div class="mt-3 text-xs font-mono text-center" style="color:#696F84">Bar heights proportional to install count · Click cards below for strategy breakdown</div>
+
+      <div class="mt-3 text-center" style="font-size:11px;color:#B0BAD0">Bar heights proportional to install count · Click cards below for strategy breakdown</div>
     </div>
 
     <!-- Competitor cards -->
@@ -1395,15 +1447,16 @@ body{background:#F7FAFF;font-family:'Plus Jakarta Sans',sans-serif;color:#273050
         <div class="w-11 h-11 rounded-2xl flex items-center justify-center font-display font-bold text-sm text-white flex-shrink-0" style="background:linear-gradient(135deg,#2C6CFF,#08A1FF);letter-spacing:.5px">AK</div>
         <div>
           <div class="font-display font-bold text-sm" style="color:#273050">Avisha Kumawat</div>
-          <div class="text-xs font-mono mt-0.5" style="color:#696F84">Digital Marketing Manager · BSF Assignment · March 2026</div>
+          <div class="text-xs font-mono mt-0.5" style="color:#696F84">Product & Growth Marketing Manager · Brainstorm Force Assignment · 19 March 2026</div>
         </div>
       </div>
 
       <!-- Right: contact links -->
       <div class="flex flex-wrap items-center gap-2">
         <a href="mailto:avishakumawat@gmail.com"
+           aria-label="Send email to Avisha Kumawat"
            class="flex items-center gap-2 px-3 py-1.5 rounded-lg transition-all"
-           style="background:#fff;border:1px solid #E2E8F8;color:#273050;text-decoration:none;font-size:12px;font-family:'Plus Jakarta Sans',sans-serif"
+           style="background:#fff;border:1px solid #E2E8F8;color:#273050;text-decoration:none;font-size:12px;font-family:'Inter',sans-serif"
            onmouseover="this.style.borderColor='#C7D4F5';this.style.background='#EEF3FF';this.style.color='#2C6CFF'"
            onmouseout="this.style.borderColor='#E2E8F8';this.style.background='#fff';this.style.color='#273050'">
           <!-- Email icon -->
@@ -1412,7 +1465,7 @@ body{background:#F7FAFF;font-family:'Plus Jakarta Sans',sans-serif;color:#273050
         </a>
         <a href="https://www.linkedin.com/in/avishakumawat" target="_blank" rel="noopener"
            class="flex items-center gap-2 px-3 py-1.5 rounded-lg transition-all"
-           style="background:#fff;border:1px solid #E2E8F8;color:#273050;text-decoration:none;font-size:12px;font-family:'Plus Jakarta Sans',sans-serif"
+           style="background:#fff;border:1px solid #E2E8F8;color:#273050;text-decoration:none;font-size:12px;font-family:'Inter',sans-serif"
            onmouseover="this.style.borderColor='#C7D4F5';this.style.background='#EEF3FF';this.style.color='#2C6CFF'"
            onmouseout="this.style.borderColor='#E2E8F8';this.style.background='#fff';this.style.color='#273050'">
           <!-- LinkedIn icon -->
@@ -1525,8 +1578,10 @@ const chartObs = new IntersectionObserver(entries => {
     ];
     bars.forEach(b => {
       const el = document.getElementById(b.id);
-      if(el) setTimeout(()=>{ el.style.transition='height 1.2s cubic-bezier(.4,0,.2,1)'; el.style.height=b.h+'px'; }, b.delay);
+      if(el) setTimeout(()=>{ el.style.height=b.h+'px'; }, b.delay);
     });
+    // Fade in the numbers
+    document.querySelectorAll('.chart-num').forEach(n => { n.style.opacity='1'; });
     chartObs.disconnect();
   }});
 }, {threshold:0.4});
@@ -1551,7 +1606,8 @@ if(priceEl) priceObs.observe(priceEl);
 const sections = document.querySelectorAll('section[id]');
 window.addEventListener('scroll', () => {
   let cur='';
-  sections.forEach(s=>{ if(window.scrollY>=s.offsetTop-90)cur=s.id; });
+  sections.forEach(s=>{ if(
+window.scrollY>=s.offsetTop-90)cur=s.id; });
   document.querySelectorAll('.nav-link').forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+cur));
 }, {passive:true});
 </script>
